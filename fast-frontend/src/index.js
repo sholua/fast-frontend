@@ -7,6 +7,7 @@ import Throttling from "./components/Throttling";
 import LazyParent from "./components/LazyParent";
 import RerenderingReactMemo from "./components/RerenderingReactMemo";
 import RerenderingusememoState from "./components/RerenderingReactMemoState";
+import RerenderingUseMemo from "./components/RerenderingUseMemo";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
     </Suspense>
     <RerenderingReactMemo />
     <RerenderingusememoState />
+    <RerenderingUseMemo />
   </React.StrictMode>,
   document.getElementById("root")
 );

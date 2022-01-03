@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 
 const ChildComponent = React.memo(({ list }) => {
   console.log("Child component");
@@ -15,9 +15,11 @@ const ChildComponent = React.memo(({ list }) => {
   );
 });
 
-const RerenderingusememoState = () => {
+const getList = () => [1, 2, 3, 4];
+
+const RerenderingUseMemo = () => {
   let [count, setCount] = useState(0);
-  let [list, setList] = useState([1, 2, 3, 4]); // list in State
+  const list = useMemo(() => getList(), []); // list from external function
 
   const handleIncrement = () => setCount(count + 1);
 
@@ -25,7 +27,7 @@ const RerenderingusememoState = () => {
 
   return (
     <div>
-      <h3>Parent component. List from state</h3>
+      <h3>Parent component useMemo hook</h3>
       <p>Count: {count}</p>
       <button onClick={handleIncrement}>Increment</button>
       <ChildComponent list={list} />
@@ -33,4 +35,4 @@ const RerenderingusememoState = () => {
   );
 };
 
-export default RerenderingusememoState;
+export default RerenderingUseMemo;

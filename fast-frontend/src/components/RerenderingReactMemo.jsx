@@ -19,7 +19,7 @@ const Rerenderingusememo = () => {
 
   return (
     <div>
-      <h3>Parent component</h3>
+      <h3>Parent component React Memo</h3>
       <p>Count: {count}</p>
       <button onClick={handleIncrement}>Increment</button>
       <ChildComponent />
