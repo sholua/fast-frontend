@@ -4,7 +4,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Debounce from "./components/Debounce";
 import Throttling from "./components/Throttling";
-import Parentforlazy from "./components/ParentForLazy";
+import Parentforlazy from "./components/LazyParent";
 
 ReactDOM.render(
   <React.StrictMode>
