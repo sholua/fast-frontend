@@ -1,14 +1,18 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Debounce from "./components/Debounce";
 import Throttling from "./components/Throttling";
+import Parentforlazy from "./components/ParentForLazy";
 
 ReactDOM.render(
   <React.StrictMode>
     <Debounce />
     <Throttling />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Parentforlazy />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById("root")
 );
