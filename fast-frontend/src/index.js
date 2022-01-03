@@ -8,6 +8,7 @@ import LazyParent from "./components/LazyParent";
 import RerenderingReactMemo from "./components/RerenderingReactMemo";
 import RerenderingusememoState from "./components/RerenderingReactMemoState";
 import RerenderingUseMemo from "./components/RerenderingUseMemo";
+import RerenderingUseCallback from "./components/RerenderingUseCallback";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.render(
     <RerenderingReactMemo />
     <RerenderingusememoState />
     <RerenderingUseMemo />
+    <RerenderingUseCallback />
   </React.StrictMode>,
   document.getElementById("root")
 );
