@@ -4,15 +4,17 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Debounce from "./components/Debounce";
 import Throttling from "./components/Throttling";
-import Parentforlazy from "./components/LazyParent";
+import LazyParent from "./components/LazyParent";
+import RerenderingReactMemo from "./components/RerenderingReactMemo";
 
 ReactDOM.render(
   <React.StrictMode>
     <Debounce />
     <Throttling />
     <Suspense fallback={<div>Loading...</div>}>
-      <Parentforlazy />
+      <LazyParent />
     </Suspense>
+    <RerenderingReactMemo />
   </React.StrictMode>,
   document.getElementById("root")
 );
