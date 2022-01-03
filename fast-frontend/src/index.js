@@ -3,10 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Debounce from "./components/Debounce";
+import Throttling from "./components/Throttling";
 
 ReactDOM.render(
   <React.StrictMode>
     <Debounce />
+    <Throttling />
   </React.StrictMode>,
   document.getElementById("root")
 );
